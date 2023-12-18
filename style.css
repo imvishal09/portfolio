@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.project img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.project-title {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
