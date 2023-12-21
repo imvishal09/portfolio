@@ -7,9 +7,9 @@ const projects = [
   },
   {
     name: 'image-classification',
-    image: 'https://raw.githubusercontent.com/imvishal09/your-repository/main/no-image-placeholder.png', // Replace with your actual no-image placeholder if available
+    image: 'https://raw.githubusercontent.com/imvishal09/your-repository/main/no-image-placeholder.png',
     description: 'A machine learning project focused on classifying images into distinct categories.',
-    link: 'https://github.com/imvishal09/image-classification' // Replace with the actual link to your project
+    link: 'https://github.com/imvishal09/image-classification'
   },
   {
     name: 'Netflix-Stock-Price-Trend-Prediction',
