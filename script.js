@@ -1,37 +1,36 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const projects = [
-        {
-            name: 'Tableau-Dashboard',
-            thumbnail: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png'
-        },
-        {
-            name: 'image-classification',
-            thumbnail: 'https://github.com/imvishal09/portfolio/blob/main/no%20preview%20image'
-        {
-            name: 'Netflix-Stock-Price-Trend-Prediction',
-            thumbnail: 'https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png'
-        }
-    ];
+const projects = [
+  {
+    name: 'Tableau-Dashboard',
+    image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
+    description: 'A detailed Tableau dashboard visualizing various datasets.',
+    link: 'https://github.com/imvishal09/Tableau-Dashboard'
+  },
+  {
+    name: 'image-classification',
+    image: 'https://raw.githubusercontent.com/imvishal09/your-repository/main/no-image-placeholder.png', // Replace with your actual no-image placeholder if available
+    description: 'A machine learning project focused on classifying images into distinct categories.',
+    link: 'https://github.com/imvishal09/image-classification' // Replace with the actual link to your project
+  },
+  {
+    name: 'Netflix-Stock-Price-Trend-Prediction',
+    image: 'https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png',
+    description: 'A data analysis project predicting Netflix stock price trends.',
+    link: 'https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction'
+  }
+];
 
-    projects.forEach(project => {
-        const projectDiv = document.createElement('div');
-        projectDiv.className = 'project';
+const container = document.getElementById('projects-container');
 
-        const projectTitle = document.createElement('h2');
-        projectTitle.className = 'project-title';
-        projectTitle.textContent = project.name;
-
-        const projectImage = document.createElement('img');
-        // Check if thumbnail URL is provided before setting src
-        if (project.thumbnail) {
-            projectImage.src = project.thumbnail;
-        } else {
-            projectImage.alt = 'No image available';
-        }
-
-        projectDiv.appendChild(projectImage);
-        projectDiv.appendChild(projectTitle);
-
-        document.getElementById('projects').appendChild(projectDiv);
-    });
+projects.forEach(project => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <img class="card-image" src="${project.image}" alt="${project.name} Image">
+    <div class="card-content">
+      <h2 class="card-title">${project.name}</h2>
+      <p class="card-description">${project.description}</p>
+      <a href="${project.link}" class="card-link">View Project</a>
+    </div>
+  `;
+  container.appendChild(card);
 });
