@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             name: 'image-classification',
-            thumbnail: '' // You need to add the correct URL for this project's thumbnail
+            thumbnail: 'https://img.freepik.com/premium-photo/image-file-icon-3d-render-illustration_567294-3212.jpg?size=626&ext=jpg&ga=GA1.1.261165820.1697800352&semt=ais'
         },
         {
             name: 'Netflix-Stock-Price-Trend-Prediction',
