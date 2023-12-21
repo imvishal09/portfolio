@@ -6,8 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
         {
             name: 'image-classification',
-            thumbnail: 'https://img.freepik.com/premium-photo/image-file-icon-3d-render-illustration_567294-3212.jpg?size=626&ext=jpg&ga=GA1.1.261165820.1697800352&semt=ais'
-        },
+            thumbnail: 'https://github.com/imvishal09/portfolio/blob/main/no%20preview%20image'
         {
             name: 'Netflix-Stock-Price-Trend-Prediction',
             thumbnail: 'https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png'
