@@ -1,24 +1,64 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://api.github.com/users/imvishal09/repos')
-        .then(response => response.json())
-        .then(repos => {
-            const projectsContainer = document.getElementById('projects');
-            repos.forEach(repo => {
-                const projectDiv = document.createElement('div');
-                projectDiv.className = 'project';
+    const projects = [
+        {
+            name: 'Tableau-Dashboard',
+            thumbnail: document.addEventListener('DOMContentLoaded', function() {
+    const projects = [
+        {
+            name: 'Tableau-Dashboard',
+            thumbnail: 'https://github.com/imvishal09/Tableau-Dashboard/blob/main/OVERVIEW.png?raw=true'
+        {
+            name: 'image-classification',
+            thumbnail: 'https://raw.githubusercontent.com/imvishal09/image-classification/master/image-classification-thumbnail.png'
+        },
+        {
+            name: 'Netflix-Stock-Price-Trend-Prediction',
+            thumbnail: 'https://github.com/imvishal09/Netflix_Stock_Price_Trend_Prediction/blob/main/Ouput.png'
+        }
+    ];
 
-                const projectTitle = document.createElement('h2');
-                projectTitle.className = 'project-title';
-                projectTitle.textContent = repo.name;
+    projects.forEach(project => {
+        const projectDiv = document.createElement('div');
+        projectDiv.className = 'project';
 
-                const projectImage = document.createElement('img');
-                // Replace the path below with the actual path to your thumbnails
-                projectImage.src = `https://raw.githubusercontent.com/imvishal09/${repo.name}/master/thumbnail.png`; 
+        const projectTitle = document.createElement('h2');
+        projectTitle.className = 'project-title';
+        projectTitle.textContent = project.name;
 
-                projectDiv.appendChild(projectImage);
-                projectDiv.appendChild(projectTitle);
-                projectsContainer.appendChild(projectDiv);
-            });
-        })
-        .catch(error => console.error('Error fetching repositories:', error));
+        const projectImage = document.createElement('img');
+        projectImage.src = project.thumbnail;
+
+        projectDiv.appendChild(projectImage);
+        projectDiv.appendChild(projectTitle);
+
+        document.getElementById('projects').appendChild(projectDiv);
+    });
+});
+
+        {
+            name: 'image-classification',
+            thumbnail: 'https://raw.githubusercontent.com/imvishal09/image-classification/master/image-classification-thumbnail.png'
+        },
+        {
+            name: 'Netflix-Stock-Price-Trend-Prediction',
+            thumbnail: 'https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/master/Netflix-Stock-Price-Trend-Prediction-thumbnail.png'
+        }
+    ];
+
+    projects.forEach(project => {
+        const projectDiv = document.createElement('div');
+        projectDiv.className = 'project';
+
+        const projectTitle = document.createElement('h2');
+        projectTitle.className = 'project-title';
+        projectTitle.textContent = project.name;
+
+        const projectImage = document.createElement('img');
+        projectImage.src = project.thumbnail;
+
+        projectDiv.appendChild(projectImage);
+        projectDiv.appendChild(projectTitle);
+
+        document.getElementById('projects').appendChild(projectDiv);
+    });
 });
