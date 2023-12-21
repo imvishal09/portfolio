@@ -2,15 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             name: 'Tableau-Dashboard',
-            thumbnail: 'https://github.com/imvishal09/Tableau-Dashboard/blob/main/OVERVIEW.png'
+            thumbnail: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png'
         },
         {
             name: 'image-classification',
-            thumbnail: 'https://raw.githubusercontent.com/imvishal09/image-classification/master/image-classification-thumbnail.png'
+            thumbnail: '' // You need to add the correct URL for this project's thumbnail
         },
         {
             name: 'Netflix-Stock-Price-Trend-Prediction',
-            thumbnail: 'https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/blob/main/Ouput.png'
+            thumbnail: 'https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png'
         }
     ];
 
@@ -23,7 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         projectTitle.textContent = project.name;
 
         const projectImage = document.createElement('img');
-        projectImage.src = project.thumbnail;
+        // Check if thumbnail URL is provided before setting src
+        if (project.thumbnail) {
+            projectImage.src = project.thumbnail;
+        } else {
+            projectImage.alt = 'No image available';
+        }
 
         projectDiv.appendChild(projectImage);
         projectDiv.appendChild(projectTitle);
