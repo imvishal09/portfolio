@@ -1,13 +1,13 @@
 const projects = [
   {
     name: 'Tableau-Dashboard',
-    //image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
+    image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
     description: 'A detailed Tableau dashboard visualizing various datasets.',
     link: 'https://github.com/imvishal09/Tableau-Dashboard'
   },
   {
     name: 'image-classification',
-    image: 'https://raw.githubusercontent.com/imvishal09/your-repository/main/no-image-placeholder.png',
+    image: 'https://raw.githubusercontent.com/imvishal09/your-repository/main/no-image-placeholder.png', // Make sure this URL is correct
     description: 'A machine learning project focused on classifying images into distinct categories.',
     link: 'https://github.com/imvishal09/image-classification'
   },
@@ -24,8 +24,12 @@ const container = document.getElementById('projects-container');
 projects.forEach(project => {
   const card = document.createElement('div');
   card.className = 'card';
+  let imageElement = '';
+  if (project.image) {
+    imageElement = `<img class="card-image" src="${project.image}" alt="${project.name} Image">`;
+  }
   card.innerHTML = `
-    <img class="card-image" src="${project.image}" alt="${project.name} Image">
+    ${imageElement}
     <div class="card-content">
       <h2 class="card-title">${project.name}</h2>
       <p class="card-description">${project.description}</p>
