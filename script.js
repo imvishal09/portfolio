@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
             link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
             description: "A feature on Malaysian artists."
-        },
+        }
     ];
 
     const container = document.querySelector('.band');
