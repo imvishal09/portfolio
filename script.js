@@ -6,18 +6,18 @@ const projects = [
     link: 'https://github.com/imvishal09/Tableau-Dashboard',
     author: 'Vishal'
   },
-  // Add more projects here
+  // ... other projects
 ];
 
 const container = document.getElementById('projects-container');
 
 projects.forEach(project => {
-  const item = document.createElement('div');
-  item.className = 'item';
+  const card = document.createElement('div');
+  card.className = 'item';
   
-  const card = document.createElement('a');
-  card.href = project.link;
-  card.className = 'card';
+  const cardLink = document.createElement('a');
+  cardLink.href = project.link;
+  cardLink.className = 'card';
   
   const thumb = document.createElement('div');
   thumb.className = 'thumb';
@@ -28,20 +28,20 @@ projects.forEach(project => {
   const title = document.createElement('h1');
   title.textContent = project.name;
   
-  const description = document.createElement('p');
-  description.textContent = project.description;
-  
   const author = document.createElement('span');
   author.textContent = project.author;
+  
+  const description = document.createElement('p');
+  description.textContent = project.description;
   
   article.appendChild(title);
   article.appendChild(description);
   article.appendChild(author);
   
-  card.appendChild(thumb);
-  card.appendChild(article);
+  cardLink.appendChild(thumb);
+  cardLink.appendChild(article);
   
-  item.appendChild(card);
+  card.appendChild(cardLink);
   
-  container.appendChild(item);
+  container.appendChild(card);
 });
