@@ -3,6 +3,7 @@ body {
     font-family: system-ui;
     -webkit-font-smoothing: antialiased;
     padding: 20px;
+    margin: 0;
 }
 
 header {
@@ -12,17 +13,19 @@ header {
 
 .band {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around; /* Distributes space evenly */
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 20px; /* Space between items */
 }
 
 .card {
     background: white;
     color: #444;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 300px;
+    width: 300px; /* Fixed width for each card */
     text-decoration: none;
+    overflow: hidden; /* Ensures the image does not spill outside the card */
+    border-radius: 5px; /* Optional: rounds corners of the card */
 }
 
 .thumb {
@@ -39,9 +42,10 @@ article {
 h1 {
     font-size: 20px;
     color: #333;
+    margin-bottom: 10px;
 }
 
-span {
+span, p {
     font-size: 12px;
     color: #999;
 }
