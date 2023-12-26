@@ -7,7 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
             link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
             description: "A feature on Malaysian artists."
         },
-        // ... additional projects
+         {
+            title: "International Artist Feature: Malaysia",
+            author: "Mary Winkler",
+            imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
+            link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
+            description: "A feature on Malaysian artists."
+        },
+         {
+            title: "International Artist Feature: Malaysia",
+            author: "Mary Winkler",
+            imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
+            link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
+            description: "A feature on Malaysian artists."
+        },
     ];
 
     const container = document.querySelector('.band');
