@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         },
          {
             title: "Netflix stock trend",
-            imageUrl: "https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/blob/main/Ouput.png",
+            imageUrl: "https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png",
             link: "https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction",
             description: "Prediction of Netflix stock."
         },
