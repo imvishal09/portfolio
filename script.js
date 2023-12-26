@@ -1,14 +1,23 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const projects = [
-        {
-            title: "International Artist Feature: Malaysia",
-            author: "Mary Winkler",
-            imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
-            link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
-            description: "A feature on Malaysian artists."
-        },
-        // Add more projects here
-    ];
+const projects = [
+    {
+        title: "Tableau Dashboard",
+        imageUrl: "https://github.com/imvishal09/Tableau-Dashboard/blob/main/OVERVIEW.png",
+        link: "https://github.com/imvishal09/Tableau-Dashboard",
+        description: "This is the US Consumer Finance Complaints Dashboard"
+    },
+    {
+        title: "Netflix Stock Trend",
+        imageUrl: "https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/blob/main/Ouput.png",
+        link: "https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction",
+        description: "This is trend prediction for the netflix stock."
+    },
+    {
+        title: "Image Classification",
+        imageUrl: "",
+        link: "https://github.com/imvishal09/image-classification",
+        description: "Recognises the object using ML"
+    }
+];
 
     const container = document.querySelector('.band');
 
