@@ -1,25 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
-            title: "International Artist Feature: Malaysia",
-            author: "Mary Winkler",
-            imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
-            link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
-            description: "A feature on Malaysian artists."
+            title: "Tableau Dashboard",
+            imageUrl: "https://github.com/imvishal09/Tableau-Dashboard/blob/main/OVERVIEW.png",
+            link: "https://github.com/imvishal09/Tableau-Dashboard",
+            description: "US Consumer Complaints"
         },
          {
-            title: "International Artist Feature: Malaysia",
-            author: "Mary Winkler",
-            imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
-            link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
-            description: "A feature on Malaysian artists."
+            title: "Netflix stock trend",
+            imageUrl: "https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/blob/main/Ouput.png",
+            link: "https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction",
+            description: "Prediction of Netflix stock."
         },
          {
-            title: "International Artist Feature: Malaysia",
-            author: "Mary Winkler",
-            imageUrl: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/flex-1.jpg",
-            link: "https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852",
-            description: "A feature on Malaysian artists."
+            title: "Image Classification",
+            imageUrl:"",
+            link: "https://github.com/imvishal09/image-classification",
+            description: "Image classification using ML."
         }
     ];
 
