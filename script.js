@@ -1,38 +1,47 @@
 const projects = [
   {
     name: 'Tableau-Dashboard',
-   // image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
+    image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
     description: 'A detailed Tableau dashboard visualizing various datasets.',
-    link: 'https://github.com/imvishal09/Tableau-Dashboard'
+    link: 'https://github.com/imvishal09/Tableau-Dashboard',
+    author: 'Vishal'
   },
-  {
-    name: 'image-classification',
-    // Ensure this URL points to an actual image in your repository.
-    image: 'https://raw.githubusercontent.com/imvishal09/your-repository/main/no-image-placeholder.png',
-    description: 'A machine learning project focused on classifying images into distinct categories.',
-    link: 'https://github.com/imvishal09/image-classification'
-  },
-  {
-    name: 'Netflix-Stock-Price-Trend-Prediction',
-    image: 'https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png',
-    description: 'A data analysis project predicting Netflix stock price trends.',
-    link: 'https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction'
-  }
+  // Add more projects here
 ];
 
 const container = document.getElementById('projects-container');
 
 projects.forEach(project => {
-  const card = document.createElement('div');
+  const item = document.createElement('div');
+  item.className = 'item';
+  
+  const card = document.createElement('a');
+  card.href = project.link;
   card.className = 'card';
-  const imageElement = project.image ? `<img class="card-image" src="${project.image}" alt="${project.name} Image">` : '';
-  card.innerHTML = `
-    ${imageElement}
-    <div class="card-content">
-      <h2 class="card-title">${project.name}</h2>
-      <p class="card-description">${project.description}</p>
-      <a href="${project.link}" class="card-link">View Project</a>
-    </div>
-  `;
-  container.appendChild(card);
+  
+  const thumb = document.createElement('div');
+  thumb.className = 'thumb';
+  thumb.style.backgroundImage = `url(${project.image})`;
+  
+  const article = document.createElement('article');
+  
+  const title = document.createElement('h1');
+  title.textContent = project.name;
+  
+  const description = document.createElement('p');
+  description.textContent = project.description;
+  
+  const author = document.createElement('span');
+  author.textContent = project.author;
+  
+  article.appendChild(title);
+  article.appendChild(description);
+  article.appendChild(author);
+  
+  card.appendChild(thumb);
+  card.appendChild(article);
+  
+  item.appendChild(card);
+  
+  container.appendChild(item);
 });
