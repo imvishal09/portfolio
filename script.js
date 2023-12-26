@@ -1,7 +1,7 @@
 const projects = [
   {
     name: 'Tableau-Dashboard',
-    //image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
+    ///image: 'https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png',
     description: 'A detailed Tableau dashboard visualizing various datasets.',
     link: 'https://github.com/imvishal09/Tableau-Dashboard'
   },
