@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
             title: "Tableau Dashboard",
-            imageUrl: "https://github.com/imvishal09/Tableau-Dashboard/blob/main/OVERVIEW.png",
+            imageUrl: "https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png",
             link: "https://github.com/imvishal09/Tableau-Dashboard",
             description: "US Consumer Complaints"
         },
