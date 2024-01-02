@@ -6,52 +6,22 @@ body {
     margin: 0;
 }
 
-header {
+/* ... (existing CSS styles) ... */
+
+.introduction {
     text-align: center;
+    padding: 20px;
     margin-bottom: 20px;
 }
 
-.band {
-    display: flex;
-    justify-content: space-around; /* Distributes space evenly */
-    flex-wrap: wrap; /* Allows items to wrap to the next line */
-    gap: 5px; /* Space between items */
-}
-
-.card {
-    background: white;
-    color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 300px; /* Fixed width for each card */
-    text-decoration: none;
-    overflow: hidden; /* Ensures the image does not spill outside the card */
-    border-radius: 5px; /* Optional: rounds corners of the card */
-}
-
-.thumb {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-article {
-    padding: 20px;
-}
-
-h1 {
-    font-size: 20px;
+.social-media a {
+    margin: 0 10px;
     color: #333;
-    margin-bottom: 10px;
+    text-decoration: none;
 }
 
-span, p {
-    font-size: 12px;
-    color: #999;
+.social-media a:hover {
+    text-decoration: underline;
 }
 
-footer {
-  text-align: center;
-  padding: 5px;
-  color: #000;
-}
+/* ... (rest of your existing CSS styles) ... */
