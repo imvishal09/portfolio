@@ -49,3 +49,9 @@ span, p {
     font-size: 12px;
     color: #999;
 }
+
+footer {
+  text-align: center;
+  padding: 5px;
+  color: #000;
+}
