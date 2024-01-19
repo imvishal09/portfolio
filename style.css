@@ -105,6 +105,12 @@ footer {
     text-align: center;
 }
 
+footer .social-media img {
+    width: 30px; /* Adjust this value as needed */
+    height: auto; /* This ensures the image maintains its aspect ratio */
+}
+
+
 @keyframes scroll {
     0%, 100% {
         top: 8px;
