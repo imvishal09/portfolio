@@ -103,11 +103,12 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-color: black;
 }
 
 footer .social-media img {
-    width: 30px; /* Adjust this value as needed */
-    height: auto; /* This ensures the image maintains its aspect ratio */
+    width: 30px; 
+    height: auto; 
 }
 
 
