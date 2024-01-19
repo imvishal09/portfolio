@@ -97,6 +97,14 @@ body {
     animation: scroll 2s infinite;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
 @keyframes scroll {
     0%, 100% {
         top: 8px;
