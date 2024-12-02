@@ -17,7 +17,19 @@ document.addEventListener('DOMContentLoaded', function() {
             imageUrl: "https://example.com/path/to/image3.jpg",
             link: "https://example.com/gamma-development",
             description: "Developing new solutions within the gamma sector."
-        }
+        },
+        {
+            title: "Gamma Development",
+            imageUrl: "https://example.com/path/to/image3.jpg",
+            link: "https://example.com/gamma-development",
+            description: "Developing new solutions within the gamma sector."
+        },
+        {
+            title: "Gamma Development",
+            imageUrl: "https://example.com/path/to/image3.jpg",
+            link: "https://example.com/gamma-development",
+            description: "Developing new solutions within the gamma sector."
+        },
     ];
 
     const container = document.querySelector('.band');
