@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
-            title: "Project Alpha",
-            imageUrl: "https://example.com/path/to/image1.jpg",
-            link: "https://example.com/project-alpha",
+            title: "Tableau-Dashboard: US Consumer Finance Complaints",
+            imageUrl: "https://github.com/imvishal09/Tableau-Dashboard/blob/main/OVERVIEW.png",
+            link: "https://github.com/imvishal09/Tableau-Dashboard",
             description: "This project involves creating an advanced alpha algorithm."
         },
         {
