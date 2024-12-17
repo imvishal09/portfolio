@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Vishal's Portfolio</h1>
+        <nav>
+            <a href="#resume" onclick="scrollToResume()">Resume</a>
+            <a href="#certifications" onclick="scrollToCertifications()">Certifications</a>
+        </nav>
+    </header>    
+
+    <!-- Introduction Section -->
+    <section class="introduction">
+        <p>Hi, I’m Venkata Vishal Kotari, a recent graduate with a Master’s in Information Technology and Management from the University of Sydney. Over the years, I’ve been fortunate to wear many hats—Casual Academic, Lead Advisor for PG Connect, and Co-Secretary at SUPRA—where I helped build communities and supported students. I’m passionate about using technology to solve real-world problems, especially in AI, data analytics, and sustainable innovation. From developing websites and implementing digital solutions to consulting on audience growth strategies, I’ve enjoyed turning ideas into impactful outcomes. Whether it’s teaching, building, or collaborating, I’m all about creating meaningful work that makes a difference. Let’s connect!</p>
+    </section>
+
+    <!-- Project Cards Container -->
+    <section class="band">
+        <!-- Project cards script.js -->
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <embed src="Venkata_Vishal Resume.pdf" type="application/pdf">
+    </section>
+
+    <!-- Certifications Section -->
+<section id="certifications">
+    <h2>Certifications</h2>
+    <div class="certification-item">
+        <h3><a href="https://github.com/imvishal09/portfolio/blob/main/1706606986823.pdf/" target="_blank">Carbon Literacy Project</a></h3>
+        <p>The University of Sydney - November 2023</p>
+    </div>
+    <div class="certification-item">
+        <h3><a href="https://github.com/imvishal09/portfolio/blob/main/Coursera%20VF9SRULWHXHB.pdf" target="_blank">Foundations: Data, Data, Everywhere</a></h3>
+        <p>Google - January 2022</p>
+    </div>
+    <div class="certification-item">
+        <h3><a href="https://github.com/imvishal09/portfolio/blob/main/CERTIFICATE_LANDING_PAGE~S28QSEFAKX92.jpeg" target="_blank">Machine Learning Operations (MLOps): Getting Started</a></h3>
+        <p>Google Cloud - February 2021</p>
+    </div>
+    <div class="certification-item">
+        <h3><a href="https://github.com/imvishal09/portfolio/blob/main/certificate-elements-of-ai.png" target="_blank">Elements of AI</a></h3>
+        <p>University of Helsinki - August 2024</p>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>2024 by Vishal.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/venkata-vishal-k-14a3b21a3/" target="_blank">
+                <img src="https://img.icons8.com/?size=50&id=61956&format=png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/imvishal09" target="_blank">
+                <img src="https://img.icons8.com/?size=50&id=12598&format=png" alt="GitHub">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function scrollToResume() {
+            document.getElementById('resume').scrollIntoView({ behavior: 'smooth' });
+        }
+        function scrollToCertifications() {
+            document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
