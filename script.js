@@ -1,6 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
+            title: " LLaMA 3.2 - 3B Brompt",
+            imageUrl: "https://huggingface.co/imvshal09/llama-3.2-3b-Brompt/blob/main/Screenshot%202025-02-15%20at%206.29.29%E2%80%AFpm.png",
+            link: "https://huggingface.co/imvshal09/llama-3.2-3b-Brompt",
+            description: "This is a fine-tuned LLaMA 3.2 - 3B model designed to refine and enhance user prompts. It instantly makes prompts clearer, more detailed, and well-structured."
+        },
+        {
             title: "Tableau-Dashboard: US Consumer Finance Complaints",
             imageUrl: "https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png",
             link: "https://github.com/imvishal09/Tableau-Dashboard",
