@@ -1,10 +1,16 @@
 document.addEventListener('DOMContentLoaded', function() {
     const projects = [
         {
-            title: " LLaMA 3.2 - 3B Brompt",
+            title: "LLaMA 3.2 - 3B Brompt",
             imageUrl: "https://raw.githubusercontent.com/imvishal09/portfolio/refs/heads/main/Brompt%20ss.jpg",
             link: "https://huggingface.co/imvshal09/llama-3.2-3b-Brompt",
             description: "This is a fine-tuned LLaMA 3.2 - 3B model designed to refine and enhance user prompts. It instantly makes prompts clearer, more detailed, and well-structured."
+        },
+        {
+            title: "Course Feedback System",
+            imageUrl: "https://raw.githubusercontent.com/imvishal09/portfolio/refs/heads/main/NSW%20Youth%20Dashboard.jpg",
+            link: "",
+            description: "As part of my group capstone project, I helped build a Course Feedback System for Youth Justice NSW. This web application makes it easier to collect and review feedback from training courses. Administrators can add and manage courses, while users can browse available courses and submit feedback. The system includes useful features like QR codes for quick access and a simple dashboard to view feedback. It is designed to be easy to use, making the process smoother for both trainers and participants. This project highlights my skills in web development, database management, and creating user-friendly applications."
         },
         {
             title: "Tableau-Dashboard: US Consumer Finance Complaints",
