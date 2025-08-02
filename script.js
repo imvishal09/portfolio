@@ -38,11 +38,29 @@ document.addEventListener('DOMContentLoaded', function() {
         },
     ];
 
-    const container = document.querySelector('.band');
+    const books = [
+        {
+            title: "Supremacy: The AI Revolution",
+            author: "Parmy Olson",
+            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/71qQKQqQqQL._AC_UF1000,1000_QL80_.jpg",
+            link: "https://www.amazon.com/Supremacy-AI-Parmy-Olson/dp/0593421296",
+            description: "AI's rapid evolution from theoretical concepts to practical applications reshaping industries. Explores power dynamics, ethical considerations, and future implications of AI integration.",
+            insights: "Influenced my approach to AI projects, making me more conscious of ethical implications and societal impact."
+        }
+    ];
 
+    // Create project cards
+    const projectContainer = document.querySelector('.band');
     projects.forEach(project => {
         const cardElement = createProjectCard(project);
-        container.appendChild(cardElement);
+        projectContainer.appendChild(cardElement);
+    });
+
+    // Create book cards
+    const bookContainer = document.querySelector('#books .band');
+    books.forEach(book => {
+        const cardElement = createBookCard(book);
+        bookContainer.appendChild(cardElement);
     });
 
     function createProjectCard(project) {
@@ -63,6 +81,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
         article.appendChild(title);
         article.appendChild(description);
+        card.appendChild(thumb);
+        card.appendChild(article);
+
+        return card;
+    }
+
+    function createBookCard(book) {
+        const card = document.createElement('a');
+        card.className = 'card';
+        card.href = book.link;
+        card.target = "_blank";
+
+        const thumb = document.createElement('div');
+        thumb.className = 'thumb';
+        thumb.style.backgroundImage = `url(${book.imageUrl})`;
+
+        const article = document.createElement('article');
+        const title = document.createElement('h1');
+        title.textContent = book.title;
+        
+        const author = document.createElement('p');
+        author.className = 'author';
+        author.textContent = `by ${book.author}`;
+        
+        const description = document.createElement('p');
+        description.textContent = book.description;
+        
+        const insights = document.createElement('p');
+        insights.className = 'insights';
+        insights.textContent = `💡 ${book.insights}`;
+
+        article.appendChild(title);
+        article.appendChild(author);
+        article.appendChild(description);
+        article.appendChild(insights);
         card.appendChild(thumb);
         card.appendChild(article);
 
