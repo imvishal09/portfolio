@@ -63,14 +63,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     ];
 
-    // Create project cards
+    // project cards
     const projectContainer = document.querySelector('.band');
     projects.forEach(project => {
         const cardElement = createProjectCard(project);
         projectContainer.appendChild(cardElement);
     });
 
-    // Create book cards
+    // book cards
     const bookContainer = document.querySelector('#books .band');
     books.forEach(book => {
         const cardElement = createBookCard(book);
@@ -119,12 +119,13 @@ document.addEventListener('DOMContentLoaded', function() {
         author.className = 'author';
         author.textContent = `by ${book.author}`;
         
-        const description = document.createElement('p');
-        description.textContent = book.description;
+        const thoughts = document.createElement('p');
+        thoughts.className = 'thoughts';
+        thoughts.textContent = book.Thoughts;
 
         article.appendChild(title);
         article.appendChild(author);
-        article.appendChild(description);
+        article.appendChild(thoughts);
         card.appendChild(thumb);
         card.appendChild(article);
 

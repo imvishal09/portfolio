@@ -524,3 +524,11 @@ footer .social-media img {
 .card:hover .insights {
     color: #0056b3;
 }
+
+.card .thoughts {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    line-height: 1.5;
+}
