@@ -31,6 +31,12 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "This project showcases the use of Neo4j for graph-based analysis of an airport network. It involves designing a schema, importing data and executing workloads to extract meaningful insights."
         },
         {
+            title: "Simple Excel Monthly Budgeting and Forecasting",
+            imageUrl: "https://raw.githubusercontent.com/imvishal09/excel-budgeting-and-forecasting/refs/heads/main/Excel%20screenshot.png",
+            link: "https://github.com/imvishal09/excel-budgeting-and-forecasting",
+            description: "Designed to help track and predict monthly expenses and revenues."
+        },
+        {
             title: "Netflix-Stock-Price-Trend-Prediction",
             imageUrl: "https://raw.githubusercontent.com/imvishal09/Netflix-Stock-Price-Trend-Prediction/main/Ouput.png",
             link: "https://github.com/imvishal09/Netflix-Stock-Price-Trend-Prediction",
@@ -42,10 +48,18 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             title: "Supremacy: The AI Revolution",
             author: "Parmy Olson",
-            imageUrl: "https://images-na.ssl-images-amazon.com/images/I/71qQKQqQqQL._AC_UF1000,1000_QL80_.jpg",
-            link: "https://www.amazon.com/Supremacy-AI-Parmy-Olson/dp/0593421296",
-            description: "AI's rapid evolution from theoretical concepts to practical applications reshaping industries. Explores power dynamics, ethical considerations, and future implications of AI integration.",
-            insights: "Influenced my approach to AI projects, making me more conscious of ethical implications and societal impact."
+            imageUrl: "https://www.dymocks.com.au/media/catalog/product/978/103/503/82/9781035038237.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=446&width=280&canvas=280:446&dpr=2%202x",
+            link: "https://www.dymocks.com.au/supremacy-by-parmy-olson-9781035038237",
+            description: "AI's rapid evolution from theoretical concepts to practical applications reshaping industries. Explores power dynamics, ethical considerations and future implications of AI integration.",
+            Thoughts: "How AI is quietly but rapidly taking over industries and it’s exciting if you’re into tech, but also a bit terrifying because of how fast things are scaling without clear guardrails. It left me thinking, Are we building tools or handing over control?"
+        },
+        {
+            title: "The Longevity Imperative",
+            author: "Andrew J. Scott",
+            imageUrl: "https://www.dymocks.com.au/media/catalog/product/978/139/980/10/9781399801072.jpg?quality=80&bg-color=255,255,255&fit=bounds&height=446&width=280&canvas=280:446&dpr=2%202x",
+            link: "https://www.dymocks.com.au/the-longevity-imperative-by-andrew-j-scott-9781399801072",
+            description: "A leading expert on longevity calls for a revolution in how we think about health, ageing and the future. Explores sustainable lifestyle choices for longer, healthier lives.",
+            Thoughts: "It’s a serious movement about extending quality of life, not just lifespan, which honestly made me reflect on how we live now. Felt like a wake-up call for me to take health, tech and time more seriously."
         }
     ];
 
@@ -107,15 +121,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const description = document.createElement('p');
         description.textContent = book.description;
-        
-        const insights = document.createElement('p');
-        insights.className = 'insights';
-        insights.textContent = `💡 ${book.insights}`;
 
         article.appendChild(title);
         article.appendChild(author);
         article.appendChild(description);
-        article.appendChild(insights);
         card.appendChild(thumb);
         card.appendChild(article);
 

@@ -1,0 +1,38 @@
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+~$*.xlsm
+~$*.xlsb
+
+# Excel backup files
+*.xlk
+*.bak
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Temporary files
+*.tmp
+*.temp
+
+# Log files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Personal data files (if any)
+personal_data/
+sensitive_data/ 
