@@ -13,6 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
             description: "As part of my group capstone project, I helped build a Course Feedback System for Youth Justice NSW. This web application makes it easier to collect and review feedback from training courses. Administrators can add and manage courses, while users can browse available courses and submit feedback. The system includes useful features like QR codes for quick access and a simple dashboard to view feedback. It is designed to be easy to use, making the process smoother for both trainers and participants. This project highlights my skills in web development, database management, and creating user-friendly applications."
         },
         {
+            title: "PowerBI: Customer Sales and Insights Dashboard",
+            imageUrl: "https://raw.githubusercontent.com/imvishal09/PowerBI_Customer_Sales_and_Insights/refs/heads/main/customer%20insights.png",
+            link: "https://github.com/imvishal09/PowerBI_Customer_Sales_and_Insights",
+            description: "This Power BI dashboard provides a detailed analysis of customer purchasing behaviour, product category performance, and loyalty patterns using the Customer Personality Analysis dataset."
+        },
+        {
             title: "Tableau-Dashboard: US Consumer Finance Complaints",
             imageUrl: "https://raw.githubusercontent.com/imvishal09/Tableau-Dashboard/main/OVERVIEW.png",
             link: "https://github.com/imvishal09/Tableau-Dashboard",
